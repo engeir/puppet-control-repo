@@ -1,4 +1,4 @@
-class profile::base {
+class profile::basetest {
   file { '/etc/base_profile_test':
     ensure  => 'present',
     content => "This file was created by profile::basetest!",
