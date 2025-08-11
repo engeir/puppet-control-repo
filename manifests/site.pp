@@ -29,6 +29,7 @@ node default {
   # Example:
   #   class { 'my_class': }
   include motd
+  include role::basic
   package { "vim":
     ensure => installed,
 }
