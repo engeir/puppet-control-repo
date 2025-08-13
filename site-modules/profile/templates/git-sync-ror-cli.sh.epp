@@ -1,4 +1,6 @@
+<% | String $install_dir='/usr/local/bin' | -%>
 #!/bin/bash
+# vim: ft=bash
 # Will install ror cli if not installed or update to latest version
 
 KERNEL=$(uname -s)
@@ -17,7 +19,7 @@ if [ "$CURRENT_SHA" != "$LATEST_SHA" ]; then
         echo "Updating ror-cli" 17 fi
     fi
     if [ "$INSTALL_PATH" == "" ]; then
-        INSTALL_DIR="/usr/local/bin"
+        INSTALL_DIR="<%= $install_dir %>"
     else
         INSTALL_DIR=$(dirname "$INSTALL_PATH")
     fi
