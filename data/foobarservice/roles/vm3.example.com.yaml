@@ -1,2 +1,2 @@
 ---
-profile::foobarservice::package_name: 'ripgrep'
+profile::foobarservice: {}
