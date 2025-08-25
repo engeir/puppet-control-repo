@@ -34,3 +34,6 @@ node default {
     ensure => installed,
 }
 }
+
+$oscheckfamily = "${facts[os][family]} ${facts[os][release][full]}"
+$oscheckname = "${facts[os][name]} ${facts[os][release][full]}"
