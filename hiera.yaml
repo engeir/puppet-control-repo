@@ -8,6 +8,6 @@ hierarchy:
   - name: "Yaml backend"
     data_hash: yaml_data
     paths:
-      - "%{::service}/roles/%{trusted.certname}.yaml"
+      - "%{service}/roles/%{trusted.certname}.yaml"
       - "nodes/%{trusted.certname}.yaml"
       - "common.yaml"
